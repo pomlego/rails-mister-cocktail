@@ -1,0 +1,19 @@
+<div class="container">
+  <h1><%= @cocktail.name %></h1>
+  <% @cocktail.doses.each do |dose| %>
+    <div class="d-flex">
+      <p><%= dose.ingredient.name %></p>
+      <p><%= dose.description %></p>
+      <p><%= link_to "Delete", dose_path(dose.id), method: :delete, data: { confirm: "Are you sure?" } %></p>
+    </div>
+  <% end %>
+  <br>
+  <div>
+    <%= simple_form_for [@cocktail, @dose] do |f| %>
+      <%= f.input :description %>
+      <%= f.association :ingredient %>
+      <%= f.submit "Add a dose", class: "btn btn-success" %>
+    <% end %>
+  </div>
+  <p><%= link_to "Back", cocktails_path %></p>
+</div>
