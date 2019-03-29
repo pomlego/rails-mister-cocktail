@@ -28,17 +28,51 @@ Ingredient.create(name: "Unicorn Tears")
 
 Cocktail.destroy_all
 
-Cocktail.create(name: "Love Potion No 58", description: "Our most popular brew. Use with caution. We are not liable for any damages.")
-Cocktail.create(name: "Hair Growth Solution", description: "Makes hair grow at 5cm per day. Note: Applies on all parts of body")
-Cocktail.create(name: "Hiccoughing Elixir to Common Sickness ", description: "Cures most illnesses. Side effect of 3 new moons of hiccups")
-Cocktail.create(name: "Garrotting Draught of Peace
-", description: "When you need to some peace and quiet. Side effect of putting everyone around you to sleep")
-Cocktail.create(name: "Dogbreak Teardrops", description: "Swaps your body with your favourite type of dog.")
-Cocktail.create(name: "Ten-Second Pimple Vanisher ", description: "Ensures a lifetime of clear skin. Our second bestseller. 1 in 1000 chance of losing you *****")
-Cocktail.create(name: "Heartbreak Cocktail", description: "Cures your heartbreak in a flash! Note: IRREVERSIBLE.")
-Cocktail.create(name: "Hate Potion Solution ", description: "Throw it on your haters for -20HP damage")
-Cocktail.create(name: "Dizziness Removal Paste", description: "Our third bestseller. Good for travel sickness (except for broom riding).")
-Cocktail.create(name: "Muffio's All-Purpose Mixture", description: "Good for vanishing most ghosts, spirits and low-level demons")
+url1 = "https://res.cloudinary.com/dpttkxync/image/upload/v1553843090/001-crystal-ball.png"
+url2 = "https://res.cloudinary.com/dpttkxync/image/upload/v1553843089/002-elixir.png"
+url3 = "https://res.cloudinary.com/dpttkxync/image/upload/v1553843090/003-magic.png"
+url4 = "https://res.cloudinary.com/dpttkxync/image/upload/v1553843090/004-gingerbread-man.png"
+url5 = "https://res.cloudinary.com/dpttkxync/image/upload/v1553843090/005-elf-hat.png"
+url6 = "https://res.cloudinary.com/dpttkxync/image/upload/v1553843089/006-miracle.png"
+url7 = "https://res.cloudinary.com/dpttkxync/image/upload/v1553843090/007-pumpkin-carriage.png"
+url8 = "https://res.cloudinary.com/dpttkxync/image/upload/v1553843090/008-crown.png"
+url9 = "https://res.cloudinary.com/dpttkxync/image/upload/v1553843090/009-frog-prince.png"
+
+cocktail1 = Cocktail.new(name: "Love Potion No 58", description: "Our most popular brew. Use with caution. We are not liable for any damages.")
+cocktail1.remote_photo_url = url1
+cocktail1.save
+
+cocktail2 = Cocktail.create(name: "Hair Growth Solution", description: "Makes hair grow at 5cm per day. Note: Applies on all parts of body")
+cocktail2.remote_photo_url = url2
+cocktail2.save
+
+cocktail3 = Cocktail.create(name: "Hiccoughing Elixir to Common Sickness ", description: "Cures most illnesses. Side effect of 3 new moons of hiccups")
+cocktail3.remote_photo_url = url3
+cocktail3.save
+
+cocktail4 = Cocktail.create(name: "Garrotting Draught of Peace", description: "When you need to some peace and quiet. Side effect of putting everyone around you to sleep")
+cocktail4.remote_photo_url = url4
+cocktail4.save
+
+cocktail5 = Cocktail.create(name: "Dogbreak Teardrops", description: "Swaps your body with your favourite type of dog.")
+cocktail5.remote_photo_url = url5
+cocktail5.save
+
+cocktail6 = Cocktail.create(name: "Ten-Second Pimple Vanisher ", description: "Ensures a lifetime of clear skin. Our second bestseller. 1 in 1000 chance of losing you *****")
+cocktail6.remote_photo_url = url6
+cocktail6.save
+
+cocktail7 = Cocktail.create(name: "Heartbreak Cocktail", description: "Cures your heartbreak in a flash! Note: IRREVERSIBLE.")
+cocktail7.remote_photo_url = url7
+cocktail7.save
+
+cocktail8 = Cocktail.create(name: "Hate Potion Solution ", description: "Throw it on your haters for -20HP damage")
+cocktail8.remote_photo_url = url8
+cocktail8.save
+
+cocktail9 = Cocktail.create(name: "Dizziness Removal Paste", description: "Our third bestseller. Good for travel sickness (except for broom riding).")
+cocktail9.remote_photo_url = url9
+cocktail9.save
 
 Dose.destroy_all
 

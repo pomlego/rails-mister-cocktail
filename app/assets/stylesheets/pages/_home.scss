@@ -6,6 +6,8 @@ body{
 a{
   color: inherit;
   text-decoration: none!important;
+  padding: 0 0;
+  margin: 0 0;
 }
 
 .img{
@@ -15,6 +17,58 @@ a{
   height: 100vh;
 }
 
+.img-2{
+  background-image: asset-url('night_bg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30vh;
+}
 
+.sm-ptn{
+  width: 120px
+}
 
+.potion-card-image{
+  text-align: center;
+}
 
+.potion-card-text{
+  color: black;
+  text-align: center;
+}
+
+.potion-card-image img{
+  width: 80px;
+}
+/* Flip Cards CSS */
+.card-container {
+  display: grid;
+  perspective: 200px;
+}
+
+.card-flip {
+  display: grid;
+  grid-template: 1fr / 1fr;
+  grid-template-areas: "frontAndBack";
+  transform-style: preserve-3d;
+  transition: all 0.7s ease;
+}
+
+.card-flip div {
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+.front {
+  grid-area: frontAndBack;
+}
+
+.back {
+  background-color: purple;
+  grid-area: frontAndBack;
+  transform: rotateY(-180deg);
+}
+
+.card-container:hover .card-flip {
+  transform: rotateY(180deg);
+}

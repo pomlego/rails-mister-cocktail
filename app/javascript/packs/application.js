@@ -17,3 +17,8 @@
 
 console.log('Hello World from Webpacker')
 import 'bootstrap';
+
+// const potionCard = document.querySelector('.potion-card');
+// potionCard.addEventListener( 'click', function() {
+//   potionCard.classList.toggle('is-flipped');
+// });
