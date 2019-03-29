@@ -4,6 +4,9 @@
     <div class="d-flex">
       <p><%= dose.ingredient.name %></p>
       <p><%= dose.description %></p>
+      <% if @cocktail.photo.present? %>
+        <p><%= cl_image_tag @cocktail.photo, height: 300, width: 400, crop: :fill %></p>
+      <% end %>
       <p><%= link_to "Delete", dose_path(dose.id), method: :delete, data: { confirm: "Are you sure?" } %></p>
     </div>
   <% end %>
