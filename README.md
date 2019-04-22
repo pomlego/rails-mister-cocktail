@@ -1,24 +1,7 @@
-# README
+# [Witch Potions](https://witch-potions-nami.herokuapp.com/)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A website where you can make any potion you like!
+<p>好きな呪文を作れるサイトですw</p>
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Basically a project to learn about Rails ActiveRecord
+<p>Rails ActiveRecordと勉強するために作りました。</p>
